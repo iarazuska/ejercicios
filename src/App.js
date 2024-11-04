@@ -1,22 +1,29 @@
-
 import React from 'react';
-import Saludo from './ejercicios/saludo';
-import Despedida from './ejercicios/despedida';
-import Coches from './ejercicios/coches'; // Ensure this path is correct
-import './ejercicios/Coches.css'; // Update the path if necessary
+import Coches from './ejercicios_JSX/coches'; 
+import Despedida from './ejercicios_JSX/despedida';
+import Saludo from './ejercicios_JSX/saludo';
+import Contador from './ejercicios_componentesReactSencillos/contador';
+import Formulario from './ejercicios_componentesReactSencillos/formulario';
+import Toggle from './ejercicios_componentesReactSencillos/toggle';
+import Tareas from './ejercicios_componentesReactSencillos/tareas';
+import Compra from './ejercicios_componentesReactSencillos/compra';
 
 const App = () => {
-  const isGreeting = false; 
+  const isGreeting = false;
   const nombre = 'IaraZas';
 
   return (
     <div className="container mt-3">
-      {isGreeting ? <Saludo nombre={nombre} /> : <Despedida nombre={nombre} />}
-      
-      <h1>Coches</h1>
-      <Coches /> {/* Corrected usage of Coches component */}
+      {}
+      <h1>Componentes React Sencillos</h1>
+      <Contador />
+      <Formulario />
+      <Toggle />
+      <Tareas />
+      <Compra />
     </div>
   );
 };
 
 export default App;
+
